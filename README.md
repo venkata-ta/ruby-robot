@@ -18,10 +18,8 @@ letters are 'L', 'R' and 'M'. 'L' and 'R' makes our robot spin 90 degrees left o
 without moving from its current position. 'M' means move forward one grid point and maintain the same
 heading. Assume that the square directly North from (x, y) is #(x, y+1).
 
-++++++
 Input:
-++++++
-The first line of input is the upper-right coordinates of the test field, the lower-left coordinates
+The first line of input is the upper-right coordinates of the test field, the lower-left coordinates 
 are assumed to be 0,0.
 
 The rest of the input is information to the robots that have been deployed. Each robot has two lines
@@ -34,17 +32,13 @@ co-ordinates and the robot orientation.
 Each robot run will be finished sequentially, which means that the second robot run can not start to
 move until the first one has finished.
 
-+++++++++++
-Test Input:
-+++++++++++
-10 10
-2 3 E
-RMRMRLMRMRMRMR
-5 4 W
-LMRMLMRMRLMRRM
+Test Input
+10 10 (Grid co-ordinates)
+2 3 E (Starting position of the robot)
+RMRMRLMRMRMRMR (Set of instructions for the robot)
+5 4 W (Starting position of 2nd robot)
+LMRMLMRMRLMRRM (Set of instructions for the 2nd robot)
 
-++++++++++++++++
-Expected Output:
-++++++++++++++++
-1 2 W
-3 2 E
+Expected Output
+1 2 W (Expected outcome for first robot)
+3 2 E (Expected outcome for second robot)
